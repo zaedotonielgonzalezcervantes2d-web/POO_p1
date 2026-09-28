@@ -1,0 +1,42 @@
+"""
+Ejercicio Practico #2 “Modelar y Diagramar en POO”
+
+"""
+print("\033c")
+
+#Clase de Coches
+class Coches:
+    def __init__(self, color, marca, velocidad):
+        self.color = color
+        self.marca = marca
+        self.velocidad = velocidad
+
+    def acelerar(self):
+        print(f"El coche {self.marca} está acelerando.")
+
+    def frenar(self):
+        print(f"El coche {self.marca} está frenando.")
+
+    def tocar_claxon(self):
+        print("pi pi pi")
+
+
+
+#Instanciar o crear objetos de la clase Coches
+coche1 = Coches("blanco", "vw", 220)
+coche2 = Coches("azul", "nissan", 180)
+
+print(f"El coche 1 es de color {coche1.color}, y la marca es {coche1.marca} y su velocidad es {coche1.velocidad} km/h.")
+print(f"El coche 2 es de color {coche2.color}, y la marca es {coche2.marca} y su velocidad es {coche2.velocidad} km/h.")
+#Mostrar información de los coches
+print(f"El claxon del coche 1 hace: ")
+coche1.tocar_claxon()
+
+print(f"El claxon del coche 2 hace: ")
+coche2.tocar_claxon()
+
+
+coche1.acelerar()
+coche2.acelerar()
+coche1.frenar()
+coche2.frenar()
